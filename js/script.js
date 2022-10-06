@@ -1,6 +1,6 @@
 const clientName=prompt("Enter your name");
-const clientAge=prompt("Enter your age");
-const numKm=prompt("Enter the distance in km");
+const clientAge=parseInt(prompt("Enter your age"));
+const numKm=parseInt(prompt("Enter the distance in km"));
 const kmEuro=0.21;
 const youngAge=18;
 const oldAge=65;
