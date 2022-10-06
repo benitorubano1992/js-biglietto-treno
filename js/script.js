@@ -4,17 +4,19 @@ const numKm=prompt("Enter the distance in km");
 const kmEuro=0.21;
 const youngAge=18;
 const oldAge=65;
+const youngScount=0.2;
+const oldScount=0.4;
 let price=kmEuro*numKm;
 
 let discount=0;
 
 
 if(clientAge<youngAge){ //find the discount 
-    discount=0.2*price;
+    discount=youngScount*price;
     
 }
 else if(clientAge>oldAge){
-    discount=0.4*price;
+    discount=oldScount*price;
 }
 price-=discount;//update the price of the ticket
 const finalPrice=price.toFixed(2);
